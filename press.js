@@ -1,10 +1,14 @@
-const App = () => {
-    return (
-        <Template>
-            <h1>Press Page</h1>
-        </Template>
+var App = function App() {
+    return React.createElement(
+        Template,
+        null,
+        React.createElement(
+            'h1',
+            null,
+            'Press Page'
+        )
     );
-}
-const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container);
-root.render(<App />)
+};
+var container = document.getElementById('root');
+var root = ReactDOM.createRoot(container);
+root.render(React.createElement(App, null));
